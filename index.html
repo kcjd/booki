@@ -36,6 +36,73 @@
         </nav>
       </header>
       <!-- HEADER -->
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+        <!-- HERO -->
+        <section class="hero">
+          <div>
+            <h1 class="hero__title title title--h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
+          </div>
+
+          <form class="search-box">
+            <label for="destination-input" class="search-box__icon">
+              <span class="visually-hidden">Destination</span>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </label>
+            <input
+              type="search"
+              id="destination-input"
+              value="Marseille, France"
+              placeholder="Votre destination"
+              class="search-box__input"
+            />
+            <button class="search-box__button" aria-label="rechercher">
+              <span class="search-box__button-icon"><i class="fas fa-search" aria-hidden="true"></i></span>
+              <span class="search-box__button-text">Rechercher</span>
+            </button>
+          </form>
+
+          <div class="hero__filters">
+            <span class="title title--h3">Filtres</span>
+
+            <ul class="hero__filters-list">
+              <li>
+                <button class="filter">
+                  <span class="filter__icon"><i class="fas fa-money-bill-wave" aria-hidden="true"></i></span>
+                  <span class="filter__content">Économique</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter">
+                  <span class="filter__icon"><i class="fas fa-child" aria-hidden="true"></i></span>
+                  <span class="filter__content">Familial</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter">
+                  <span class="filter__icon"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                  <span class="filter__content">Romantique</span>
+                </button>
+              </li>
+              <li>
+                <button class="filter">
+                  <span class="filter__icon"><i class="fas fa-dog" aria-hidden="true"></i></span>
+                  <span class="filter__content">Animaux autorisés</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__info">
+            <span class="hero__info-icon"><i class="fas fa-info" aria-hidden="true"></i></span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </section>
+        <!-- HERO -->
+      </main>
+      <!-- MAIN CONTENT -->
     </div>
     <!-- PAGE WRAPPER -->
   </body>
