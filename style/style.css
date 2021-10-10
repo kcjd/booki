@@ -302,7 +302,8 @@ label {
 }
 
 .filter__content {
-  padding-inline: 16px;
+  padding-left: 12px;
+  padding-right: 24px;
 }
 
 /* Visually hidden */
