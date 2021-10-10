@@ -15,6 +15,7 @@
   --fs-700: 24px;
 
   --br-400: 16px;
+  --br-900: 9999px;
 
   --page-padding: 5vw;
 }
@@ -107,6 +108,8 @@ label {
 .header__link::after {
   background-color: var(--clr-primary-400);
   opacity: 0;
+  transform: scaleX(0.5);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .header__link:hover {
@@ -115,6 +118,7 @@ label {
 
 .header__link:hover::after {
   opacity: 1;
+  transform: scaleX(1);
 }
 
 @media (max-width: 767px) {
@@ -282,13 +286,46 @@ label {
 
 /* Filter */
 .filter {
+  position: relative;
+  isolation: isolate;
   display: flex;
   align-items: center;
   height: 48px;
-  border-radius: 1.5em;
-  border: 2px solid var(--clr-neutral-500);
+  border-radius: var(--br-900);
   color: var(--clr-neutral-900);
   font-weight: 700;
+  overflow: hidden;
+}
+
+.filter::before,
+.filter::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.filter::before {
+  z-index: -2;
+  border: 2px solid var(--clr-neutral-500);
+}
+
+.filter::after {
+  z-index: -1;
+  background-color: var(--clr-primary-200);
+  opacity: 0;
+  transform: translateX(-100%);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.filter:hover {
+  color: var(--clr-primary-400);
+}
+
+.filter:hover::after {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .filter__icon {
