@@ -72,6 +72,14 @@ strong {
   font-weight: 600;
 }
 
+input::placeholder {
+  color: var(--clr-neutral-800);
+}
+
+input:focus {
+  outline: none;
+}
+
 /* Page wrapper */
 .page-wrapper {
   padding-inline: var(--page-padding);
