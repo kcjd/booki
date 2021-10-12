@@ -32,6 +32,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--clr-neutral-900);
   font-family: 'Raleway', sans-serif;
