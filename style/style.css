@@ -26,7 +26,9 @@
 }
 
 /* Base */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -49,12 +51,12 @@ img {
 }
 
 a {
-  color: var(--clr-neutral-900);
+  color: inherit;
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--clr-neutral-800);
+strong {
+  font-weight: 600;
 }
 
 ul {
@@ -62,26 +64,25 @@ ul {
 }
 
 button,
-input {
-  border: none;
-  background-color: transparent;
-}
-
-button,
 label {
   cursor: pointer;
 }
 
-strong {
-  font-weight: 600;
-}
-
-input::placeholder {
-  color: var(--clr-neutral-900);
+button,
+input {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
 }
 
 input:focus {
   outline: none;
+}
+
+input::placeholder {
+  color: inherit;
+  opacity: 1;
 }
 
 /* Page wrapper */
@@ -204,6 +205,10 @@ input:focus {
   margin-bottom: 8px;
 }
 
+.footer__link:hover {
+  color: var(--clr-neutral-800);
+}
+
 @media (max-width: 991px) {
   .footer__nav {
     flex-direction: column;
@@ -242,6 +247,7 @@ input:focus {
 }
 
 .hero__info-icon {
+  flex-shrink: 0;
   width: 28px;
   height: 28px;
   border: 1px solid var(--clr-neutral-600);
@@ -284,10 +290,14 @@ input:focus {
   margin-bottom: 32px;
 }
 
-.section__button {
+.section__link {
   align-self: flex-start;
   margin-top: 32px;
   font-weight: 700;
+}
+
+.section__link:hover {
+  color: var(--clr-neutral-800);
 }
 
 @media (min-width: 992px) {
@@ -418,7 +428,6 @@ input:focus {
   align-items: center;
   height: 48px;
   border-radius: var(--br-900);
-  color: var(--clr-neutral-900);
   font-weight: 700;
   overflow: hidden;
 }
@@ -440,9 +449,9 @@ input:focus {
   z-index: -1;
   background-color: var(--clr-primary-200);
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
   transform-origin: left;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .filter:hover {
@@ -532,10 +541,6 @@ input:focus {
   isolation: isolate;
   border-radius: var(--br-400);
   background-color: var(--clr-neutral-100);
-}
-
-.card:hover {
-  color: inherit;
 }
 
 .card::after {
