@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+  /* Footer */
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  /* Hero */
+  .hero__filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  /* Split sections */
+  .split-sections {
+    flex-direction: column;
+  }
+
+  /* Section */
+  .section--featured {
+    order: -1;
+    margin-inline: calc(-1 * var(--page-padding));
+    padding: 48px var(--page-padding);
+    background-color: var(--clr-neutral-400);
+  }
+}
