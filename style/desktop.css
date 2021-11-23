@@ -1,7 +1,7 @@
 @media (min-width: 992px) {
   /* Section */
   .section--contained {
-    padding: 32px;
+    padding: 2rem;
     border-radius: var(--br-500);
     background-color: var(--clr-neutral-400);
   }
@@ -19,12 +19,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 512px;
+    height: 32rem;
   }
 
   .card-masonry__item {
     flex-grow: 1;
-    width: calc(25% - 24px / 4 * 3);
+    width: calc(25% - 1.5rem / 4 * 3);
     min-height: auto;
   }
 
@@ -33,11 +33,11 @@
   }
 
   .card-masonry__item--md {
-    flex: 1 1 calc(60% - 24px * 2);
+    flex: 1 1 calc(60% - 1.5rem * 2);
   }
 
   .card-masonry__item--sm {
-    flex: 1 1 calc(40% - 24px * 2);
+    flex: 1 1 calc(40% - 1.5rem * 2);
   }
 
   /* Card */

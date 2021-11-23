@@ -8,7 +8,7 @@
   .hero__filters {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
   }
 
   /* Split sections */
@@ -20,7 +20,7 @@
   .section--featured {
     order: -1;
     margin-inline: calc(-1 * var(--page-padding));
-    padding: 48px var(--page-padding);
+    padding: 3rem var(--page-padding);
     background-color: var(--clr-neutral-400);
   }
 }
