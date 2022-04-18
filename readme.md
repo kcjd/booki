@@ -1,13 +1,17 @@
 # Booki
 
-Projet OpenClassrooms. L'objectif est d'intégrer la maquette d'un site web en HTML et CSS.
+Page web responsive réalisée pour Booki, entreprise qui propose un outil de planification de vacances. Celui-ci permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
-## Spécifications techniques
+👉 https://kcjd.github.io/booki
 
-- Le développement doit se faire en HTML et CSS, sans JavaScript ni framework.
+## Détails
 
-- La page doit être responsive sur mobile, tablette et desktop (desktop-first).
+- Intégration des pages à partir d'une maquette
 
-- La page doit passer la validation W3C
+- Développé avec HTML et CSS
 
-- La page doit être compatible avec les dernières versions de Chrome et Firefox.
+- Optimisation des images
+
+- Design responsive (desktop-first)
+
+- Valide W3C
